@@ -1,0 +1,47 @@
+.btn__total {
+  background: #008000;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  display: block;
+  height: 8vh;
+  padding: 1em;
+  text-align: center;
+  transition: all 0.4s;
+  width: 100%;
+}
+.btn__total:hover {
+  background: #000;
+  color: #008000;
+}
+.btn__facebook {
+  background: #4682b4;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  height: 8vh;
+  padding: 1em;
+  text-align: center;
+  transition: all 0.4s;
+  width: 100%;
+}
+.btn__facebook:hover {
+  background: #fff;
+  color: #4682b4;
+}
+.inp__form {
+  background: #00f;
+  border: none;
+  color: #f00;
+  padding: 0.8em;
+  width: 100%;
+}
+.lbl__user {
+  font-size: 1.2em;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  color: #f00;
+  padding-top: 1em;
+}

@@ -1,0 +1,79 @@
+body,*
+	padding 0
+	margin 0
+	font-family verdana
+c1=#f00
+c2=#FD1651
+c3=#E5F5FD
+c4=#F3AF41
+c5=#B1E3FB
+#modal__container__jc
+	align-items center
+	background rgba(1,1,1,.8)
+	display none
+	height 100vh
+	justify-content center
+	position fixed
+	top 0
+	width 100%
+	&.is-active
+		display flex
+	.contenido__modal__jc
+		display flex
+		flex-wrap wrap
+		flex-direction column
+		@import "form.styl"
+		.header__jc
+			background c5
+			padding-top 1em
+			text-align center
+			.logo
+				color c2
+				width 100%
+				font-size 2em
+			.slogan
+				color rgba(c2,.8)
+				width 100%
+			a
+				btn__normal(white,steelblue)
+				&.btn__active
+					btn__normal(steelblue,white)
+		.body__jc
+			background #19BECD
+			padding 1em
+			.btn__total
+				btn__normal(#19BECD,white)
+			.btn__enviar
+				btn__normal(white,steelblue)
+				padding 0
+			.btn__facebook
+				btn__normal(white,steelblue)
+			.inp__form
+				inp__estilo(white,#F3AF41)
+			.lbl__user
+				lbl__estilo(white,1em)
+		.footer__jc
+			background c5
+			width 100%
+			padding .2em .5em
+			color c2
+			font-style italic
+	@media screen and (min-width: 100px) and (max-width: 478px)
+		.contenido__modal__jc
+			width 95%
+	@media screen and (min-width: 479px) and (max-width: 768px)
+		.contenido__modal__jc
+			width 80%
+	@media screen and (min-width: 769px) and (max-width: 1024px)
+		.contenido__modal__jc
+			width 70%
+	@media screen and (min-width: 1025px) and (max-width: 1378px)
+		.contenido__modal__jc
+			width 40%
+	#btn__cerrar__modal__jc
+		position absolute
+		color white
+		background red
+		top 0
+		right 0
+		border none

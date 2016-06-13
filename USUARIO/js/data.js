@@ -1,0 +1,20 @@
+//modal
+$('#lanzar__modal__jc').click(function(){
+	$('#modal__container__jc').addClass('is-active');
+	$('#btn__login__user').addClass('btn__active');
+	$('.body__jc').load('../app/login.html')
+});
+$('#btn__cerrar__modal__jc').click(function(){
+	$('#modal__container__jc').removeClass('is-active');
+});
+//botones dentro del modal
+$('#btn__login__user').click(function(){
+	$('#btn__login__user').addClass('btn__active');
+	$('#btn__registro__user').removeClass('btn__active');
+	$('.body__jc').load('../app/login.html')
+});
+$('#btn__registro__user').click(function(){
+	$('.body__jc').load('../app/user.html');
+	$('#btn__registro__user').addClass('btn__active');
+	$('#btn__login__user').removeClass('btn__active');
+});

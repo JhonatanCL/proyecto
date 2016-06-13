@@ -1,0 +1,32 @@
+btn__normal(color,fondo)
+	background fondo
+	border none
+	color color
+	cursor pointer
+	display block
+	height 8vh
+	padding 1em
+	text-align center
+	transition all .4s
+	width 100%
+	font-size 1em
+	&:hover
+		background color
+		color fondo
+//inputs
+inp__estilo(color,fondo)
+	background fondo
+	border none
+	color color
+	padding .8em
+	font-size 1em
+	width 100%
+	margin-bottom .7em
+	&::-webkit-input-placeholder 
+		color green
+//labels
+lbl__estilo(color,size)
+	font-size size
+	flex-grow 0
+	color color
+	cursor pointer

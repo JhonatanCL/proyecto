@@ -1,0 +1,195 @@
+body,
+* {
+  padding: 0;
+  margin: 0;
+  font-family: verdana;
+}
+#modal__container__jc {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(1,1,1,0.8);
+  display: none;
+  height: 100vh;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#modal__container__jc.is-active {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#modal__container__jc .contenido__modal__jc {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#modal__container__jc .contenido__modal__jc .header__jc {
+  background: #b1e3fb;
+  padding-top: 1em;
+  text-align: center;
+}
+#modal__container__jc .contenido__modal__jc .header__jc .logo {
+  color: #fd1651;
+  width: 100%;
+  font-size: 2em;
+}
+#modal__container__jc .contenido__modal__jc .header__jc .slogan {
+  color: rgba(253,22,81,0.8);
+  width: 100%;
+}
+#modal__container__jc .contenido__modal__jc .header__jc a {
+  background: #4682b4;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  height: 8vh;
+  padding: 1em;
+  text-align: center;
+  transition: all 0.4s;
+  width: 100%;
+  font-size: 1em;
+}
+#modal__container__jc .contenido__modal__jc .header__jc a:hover {
+  background: #fff;
+  color: #4682b4;
+}
+#modal__container__jc .contenido__modal__jc .header__jc a.btn__active {
+  background: #fff;
+  border: none;
+  color: #4682b4;
+  cursor: pointer;
+  display: block;
+  height: 8vh;
+  padding: 1em;
+  text-align: center;
+  transition: all 0.4s;
+  width: 100%;
+  font-size: 1em;
+}
+#modal__container__jc .contenido__modal__jc .header__jc a.btn__active:hover {
+  background: #4682b4;
+  color: #fff;
+}
+#modal__container__jc .contenido__modal__jc .body__jc {
+  background: #19becd;
+  padding: 1em;
+}
+#modal__container__jc .contenido__modal__jc .body__jc .btn__total {
+  background: #fff;
+  border: none;
+  color: #19becd;
+  cursor: pointer;
+  display: block;
+  height: 8vh;
+  padding: 1em;
+  text-align: center;
+  transition: all 0.4s;
+  width: 100%;
+  font-size: 1em;
+}
+#modal__container__jc .contenido__modal__jc .body__jc .btn__total:hover {
+  background: #19becd;
+  color: #fff;
+}
+#modal__container__jc .contenido__modal__jc .body__jc .btn__enviar {
+  background: #4682b4;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  height: 8vh;
+  padding: 1em;
+  text-align: center;
+  transition: all 0.4s;
+  width: 100%;
+  font-size: 1em;
+  padding: 0;
+}
+#modal__container__jc .contenido__modal__jc .body__jc .btn__enviar:hover {
+  background: #fff;
+  color: #4682b4;
+}
+#modal__container__jc .contenido__modal__jc .body__jc .btn__facebook {
+  background: #4682b4;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  height: 8vh;
+  padding: 1em;
+  text-align: center;
+  transition: all 0.4s;
+  width: 100%;
+  font-size: 1em;
+}
+#modal__container__jc .contenido__modal__jc .body__jc .btn__facebook:hover {
+  background: #fff;
+  color: #4682b4;
+}
+#modal__container__jc .contenido__modal__jc .body__jc .inp__form {
+  background: #f3af41;
+  border: none;
+  color: #fff;
+  padding: 0.8em;
+  font-size: 1em;
+  width: 100%;
+  margin-bottom: 0.7em;
+}
+#modal__container__jc .contenido__modal__jc .body__jc .inp__form::-webkit-input-placeholder {
+  color: #008000;
+}
+#modal__container__jc .contenido__modal__jc .body__jc .lbl__user {
+  font-size: 1em;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  color: #fff;
+  cursor: pointer;
+}
+#modal__container__jc .contenido__modal__jc .footer__jc {
+  background: #b1e3fb;
+  width: 100%;
+  padding: 0.2em 0.5em;
+  color: #fd1651;
+  font-style: italic;
+}
+@media screen and (min-width: 100px) and (max-width: 478px) {
+  #modal__container__jc .contenido__modal__jc {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 479px) and (max-width: 768px) {
+  #modal__container__jc .contenido__modal__jc {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #modal__container__jc .contenido__modal__jc {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1378px) {
+  #modal__container__jc .contenido__modal__jc {
+    width: 40%;
+  }
+}
+#modal__container__jc #btn__cerrar__modal__jc {
+  position: absolute;
+  color: #fff;
+  background: #f00;
+  top: 0;
+  right: 0;
+  border: none;
+}
